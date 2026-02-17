@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fokus dýchanie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Fokus okno</h1>
+      <p class="subtitle">Každých 15 minút ti pripomenie vedomý nádych a výdych (4 doby).</p>
+
+      <section class="panel">
+        <p class="label">Čas do ďalšej pauzy</p>
+        <p id="countdown" class="countdown">15:00</p>
+        <button id="toggleTimer" class="primary">Spustiť</button>
+      </section>
+
+      <section id="breathingCard" class="panel hidden" aria-live="polite">
+        <h2 id="breathingTitle">Nadýchni sa</h2>
+        <p id="breathingCount" class="breathing-count">4</p>
+        <p id="breathingHint" class="hint">Nádych na 4 doby, potom výdych na 4 doby.</p>
+        <button id="closeBreathing" class="secondary">Ukončiť dýchanie</button>
+      </section>
+
+      <p class="hint">Tip: nechaj túto stránku otvorenú v prehliadači na mobile aj počítači.</p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
